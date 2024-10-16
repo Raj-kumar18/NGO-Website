@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+{% block title %}Events{% endblock title %} 
+{% block start %} 
+
+<div class="eventDetailPage">
+{% for x in eventDetail %} 
+
+<h1>{{x.title}}</h1>
+<div class="e_detailPage">
+
+    <img class="e_img" src="{{x.image.url}}" alt="">
+    <div class="e_date">
+        <p><i class="fa-solid fa-calendar-days"></i>{{x.date}}</p>
+        <p> <i class="fa-regular fa-clock"></i> 8:00 - 10:00</p>
+        <p><i class="fa-solid fa-location-dot"></i> {{x.location}}</p>
+    </div>
+
+    <div class="e_desc">
+    <p>{{x.description|safe}}</p>
+    </div>
+</div>
+
+{% endfor %}
+</div>
+
+
+{% endblock start %}

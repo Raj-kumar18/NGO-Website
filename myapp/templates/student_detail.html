@@ -1,0 +1,11 @@
+
+{% if student %}
+<h2>Student Detail:</h2>
+<p><strong>Name:</strong> {{ student.name }}</p>
+<p><strong>password:</strong> {{ student.password }}</p>
+<a href="{{student.samp1.url}}" target="_blank">download</a>
+<a href="{{student.samp2.url}}" target="_blank">download</a>
+<a href="{{student.samp3.url}}" target="_blank">download</a>
+{% else %}
+<p>No student found with the provided details.</p>
+{% endif %}

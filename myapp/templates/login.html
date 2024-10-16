@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% block title %}Student Login{% endblock title %} 
+{% block start %} 
+
+<form method="post" style="margin:15%">
+    {% csrf_token %}
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="dob">password:</label><br>
+    <input type="text" id="password" name="password"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+ {% endblock start %}

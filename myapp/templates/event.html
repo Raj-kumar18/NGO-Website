@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+{% block title %}Events{% endblock title %} 
+{% block start %} 
+
+
+
+ <div class="page6">
+     <div class="page5Heading">
+     <h3> Upcoming Event</h3>
+     <h1> Be ready for our upcoming </h1>
+     <h1>charity event</h1>
+     </div>
+     <div class="eventContainer">
+ 
+     {% for x in event %}
+     <div class="event" data-tilt>
+         <img class="event_img" src="{{x.image.url}}" alt="">
+     <div class="event_detail">
+         <div class="event_date">
+             <p><i class="fa-solid fa-calendar-days"></i>{{x.date}}</p>
+             <p> <i class="fa-regular fa-clock"></i> 8:00 - 10:00</p>
+             <p><i class="fa-solid fa-location-dot"></i> {{x.location}}</p>
+         </div>
+ 
+         <div class="event_con">
+             <h3>{{x.title}}</h3>
+             <p>{{x.description|safe}}</p>
+ 
+            <a href="{{x.slug}}"><button class="event_btn">Read more</button></a>
+         </div>
+     </div>
+     </div>
+     {% endfor %}
+ 
+ </div>
+
+ {% endblock start %}

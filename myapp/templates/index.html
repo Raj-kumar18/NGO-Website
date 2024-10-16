@@ -1,0 +1,441 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Mahila Shishu Seva Ashram {% endblock title %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body>
+
+
+    <div id="cursor"></div>
+    <div class="header">
+        <div class="logo">
+            <img src="/static/images/logo.jpg" alt="">
+
+            <div class="heading">
+
+                <h1><a href="/">Mahila Sishu Seva Ashram</a></h1>
+                <h3>महिला शिशु सेवा आश्रम</h3>
+                <p>Registered under society registegration ACT 21/1860</p>
+            </div>
+        </div>
+
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/">about us</a>
+                    <div class="submenu">
+
+                        <ul>
+                            <li><a href="">About MSSASHRAM</a></li>
+                            <li><a href="">Vision & Mission</a></li>
+                            <li><a href="">About Director</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/">courses</a></li>
+                <li><a href="/">Examination</a></li>
+                <li><a href="/">downloads</a></li>
+                <li><a href="/">E-prospectus</a></li>
+                <li><a href="/">Login</a></li>
+                <li><a href="/">contact us</a></li>
+            </ul>
+
+            <div class="donate">
+                <a href="/">Donate</a>
+            </div>
+
+        </div>
+
+       
+    </div>
+    
+    <div id="main">
+        {% block start %}
+  
+    
+        
+        <div class="page1">
+           
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="content_container">
+                        <h1>Let's be kind for children</h1>
+                        <p>fund raised & donation can be done effectively</p>
+                        <div class="btn">
+                            <button class="btn1">Donate fund</button>
+                            <button class="btn2">Know more</button>
+                        </div>
+                    </div>
+                    <img src="{% static '/images/slide1.jpg' %}" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="content_container">
+                        <h1>Building Hope, Changing Lives</h1>
+                        <p>fund raised & donation can be done effectively</p>
+                        <div class="btn">
+                            <button class="btn1">Donate fund</button>
+                            <button class="btn2">Know more</button>
+                        </div>
+                    </div>
+                    <img src="{% static '/images/slide2.jpg' %}" alt="">
+                  </div>
+                  <div class="swiper-slide"> 
+                    <div class="content_container">
+                        <h1>Empowering Communities, One Step at a Time</h1>
+                        <p>fund raised & donation can be done effectively</p>
+                        <div class="btn">
+                            <button class="btn1">Donate fund</button>
+                            <button class="btn2">Know more</button>
+                        </div>
+                    </div>
+                    <img src="{% static '/images/slide3.jpeg' %}" alt="">
+                </div>
+                  <div class="swiper-slide"> 
+                    <div class="content_container">
+                        <h1>Spreading Kindness, Sparking Change</h1>
+                        <p>fund raised & donation can be done effectively</p>
+                        <div class="btn">
+                            <button class="btn1">Donate fund</button>
+                            <button class="btn2">Know more</button>
+                        </div>
+                    </div>
+                    <img src="{% static '/images/slid4.jpg' %}" alt="">
+                </div>
+                  <div class="swiper-slide"> 
+                    <div class="content_container">
+                        <h1>Nurturing Dreams, Nourishing Lives</h1>
+                        <p>fund raised & donation can be done effectively</p>
+                        <div class="btn">
+                            <button class="btn1">Donate fund</button>
+                            <button class="btn2">Know more</button>
+                        </div>
+                    </div>
+                    <img src="{% static '/images/slide5.jpg' %}" alt="">
+                </div>
+                 
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+              </div>
+
+        </div>
+
+
+
+        <div class="page2" > 
+        <div class="about_img" data-tilt>
+            <img src="{% static '/images/slide3.jpeg' %}" alt="">
+        </div>
+
+        <div class="about_con">
+            <h5>Learn About Us</h5>
+            <h1>A non-proifit charity organisation</h1>
+
+            <div class="aboutP">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel in nulla inventore, aspernatur quod delectus eos ab sint rerum repudiandae ullam quia tenetur recusandae. Libero ea eius nemo, iusto laudantium officiis ipsum consequatur magnam accusamus eaque nesciunt cum laborum saepe atque assumenda provident, voluptatum totam natus facilis qui accusantium!
+            </div>
+           <a href="/"> <button class="btn1">Read more</button></a>
+        </div>
+
+        </div>
+
+        <div class="page3">
+            <div class="subpage">
+            <div class="elem">
+                <img src="data:image/jpeg;base64,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"
+                alt="">
+            <div class="text-div">
+                <h1>Mahila</h1>
+                <h1>Mahila</h1>
+            </div>
+            <img src="https://etimg.etb2bimg.com/thumb/msid-97519081,imgsize-26562,width-1200,height=765,overlay-etbfsi/budget/union-budget-2023/budget-2023-for-women-new-mahila-samman-savings-scheme-launched-to-mark-azadi-ka-amrit-mahotsav.jpg"
+                alt="">
+            </div>
+
+            <div class="elem">
+                <img src="https://d33wubrfki0l68.cloudfront.net/3401770635e95968e300d88f8b9479ecbc008eeb/be2e5/assets/home/home-experience-1.webp"
+                alt="">
+            <div class="text-div">
+                <h1>Shishu</h1>
+                <h1>Shishu</h1>
+            </div>
+            <img src="https://d33wubrfki0l68.cloudfront.net/188bb09da2a445d08ac5b4f706711772e50e8a17/e100a/assets/home/home-experience-2.webp"
+                alt="">
+            </div>
+
+
+            <div class="elem">
+                <img src="https://d33wubrfki0l68.cloudfront.net/3401770635e95968e300d88f8b9479ecbc008eeb/be2e5/assets/home/home-experience-1.webp"
+                alt="">
+            <div class="text-div">
+                <h1>Seva</h1>
+                <h1>Seva</h1>
+            </div>
+            <img src="https://d33wubrfki0l68.cloudfront.net/188bb09da2a445d08ac5b4f706711772e50e8a17/e100a/assets/home/home-experience-2.webp"
+                alt="">
+            </div>
+
+            <div class="elem">
+                <img src="https://d33wubrfki0l68.cloudfront.net/3401770635e95968e300d88f8b9479ecbc008eeb/be2e5/assets/home/home-experience-1.webp"
+                alt="">
+            <div class="text-div">
+                <h1>Aashram</h1>
+                <h1>Aashram</h1>
+            </div>
+            <img src="https://d33wubrfki0l68.cloudfront.net/188bb09da2a445d08ac5b4f706711772e50e8a17/e100a/assets/home/home-experience-2.webp"
+                alt="">
+            </div>
+        </div>
+
+        </div>
+
+        <div class="page4">
+            <h2>OUR TEAM</h2>
+            <div class="box"
+                data-image="{% static '/images/member1.jpg' %}">
+                <h3>Deepak Lal</h3>
+                <h4>2021</h4>
+            </div>
+            <div class="box"
+                data-image="{% static '/images/member2.jpg' %}">
+                <h3>Anmol Raj</h3>
+                <h4>2021</h4>
+            </div>
+            <div class="box"
+                data-image="{% static '/images/member3.jpg' %}">
+                <h3>Madhuri Kumari</h3>
+                <h4>2021</h4>
+            </div>
+            <div class="box"
+                data-image="{% static '/images/member4.jpg' %}">
+                <h3>Gopi Kumar</h3>
+                <h4>2021</h4>
+            </div>
+            <div class="box"
+                data-image="https://images.unsplash.com/photo-1686904423955-b928225c6488?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDg1fGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+                <h3>Verizon</h3>
+                <h4>2021</h4>
+            </div>
+        </div>
+
+        <div class="page5">
+            <div class="page5Heading">
+            <h3>What We DO?</h3>
+            <h1>We belive that we can save</h1>
+            <h1>more lifes with you</h1>
+            </div>
+            <div class="doContainer">
+            <div class="do" data-aos="fade-up-right">
+                <div class="do_img">
+                    <img src="{% static '/images/fruits.svg' %}" alt="">
+                </div>
+                <div class="do_con" >
+                    <h3>Healthy Food</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum asperiores qui quod, accusamus ipsum et repellat illum autem quos ullam. Sequi iste magni maxime </p>
+                </div>
+            </div>
+
+            <div class="do" data-aos="fade-up-left">
+                <div class="do_img">
+                    <img src="{% static '/images/bottled.svg' %}" alt="">
+                </div>
+                <div class="do_con">
+                    <h3>Pure Water</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum asperiores qui quod, accusamus ipsum et repellat illum autem quos ullam. Sequi iste magni maxime !</p>
+                </div>
+            </div>
+
+            <div class="do" data-aos="fade-up-right">
+                <div class="do_img" >
+                    <img src="{% static '/images/insurance.svg' %}" alt="">
+                </div>
+                <div class="do_con">
+                    <h3>Health Care</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum asperiores qui quod, accusamus ipsum et repellat illum autem quos ullam. Sequi iste magni maxime !</p>
+                </div>
+            </div>
+
+            <div class="do" data-aos="fade-up-left">
+                <div class="do_img">
+                    <img src="{% static '/images/training.svg' %}" alt="">
+                </div>
+                <div class="do_con">
+                    <h3>Primary Education</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum asperiores qui quod, accusamus ipsum et repellat illum autem quos ullam. Sequi iste magni maxime !</p>
+                </div>
+            </div>
+
+            <div class="do" data-aos="fade-up-right">
+                <div class="do_img">
+                    <img src="{% static '/images/hostel.svg' %}" alt="">
+                </div>
+                <div class="do_con">
+                    <h3>Residence Facilities</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum asperiores qui quod, accusamus ipsum et repellat illum autem quos ullam. Sequi iste magni maxime !</p>
+                </div>
+            </div>
+
+
+            <div class="do" data-aos="fade-up-left">
+                <div class="do_img">
+                    <img src="{% static '/images/family.svg' %}" alt="">
+                </div>
+                <div class="do_con">
+                    <h3>Social Care</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum asperiores qui quod, accusamus ipsum et repellat illum autem quos ullam. Sequi iste magni maxime !</p>
+                </div>
+            </div>
+
+        </div>
+        </div> 
+
+
+
+
+
+
+        <div class="page6">
+            <div class="page5Heading">
+            <h3> Upcoming Event</h3>
+            <h1> Be ready for our upcoming </h1>
+            <h1>charity event</h1>
+            </div>
+            <div class="eventContainer">
+
+            {% for x in event %}
+            <div class="event" data-tilt>
+                <img class="event_img" src="{{x.image.url}}" alt="">
+            <div class="event_detail">
+                <div class="event_date">
+                    <p><i class="fa-solid fa-calendar-days"></i>{{x.date}}</p>
+                    <p> <i class="fa-regular fa-clock"></i> 8:00 - 10:00</p>
+                    <p><i class="fa-solid fa-location-dot"></i> {{x.location}}</p>
+                </div>
+
+                <div class="event_con">
+                    <h3>{{x.title}}</h3>
+                    <p>{{x.description|safe|truncatechars:50}}</p>
+
+                   <a href="event/{{x.slug}}"><button class="event_btn">Read more</button></a>
+                </div>
+            </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        </div> 
+
+
+            {% comment %} event container ended {% endcomment %}
+    
+        <div class="page7">
+            <div class="page5Heading">
+                <h3> Our Blog</h3>
+                <h1> Latest news & articles directly </h1>
+                <h1>from our blog</h1>
+                </div>
+
+                <div class="BlogContainer">
+                   
+                    {% for x in blog %}
+                    <div class="blogBox">
+                        <img src="{{x.image.url}}" alt="">
+                        <div class="blogContent">
+                            <h1>{{x.title}}</h1>
+                            <!-- <p>{{x.content|truncatechars:50|safe}}</p> -->
+                            <a href="blog/{{x.slug}}"><button class="blogBtn">Read_more</button></a>
+                        </div>
+                    </div>
+                    
+                    {% endfor %}
+                  </div>
+                  
+
+
+                  <div class="donateBanner">
+                    <img src="/static/images/donate1.jpg" alt="">
+                  <div class="donateBannerContent">
+                    <h3>Donate Now</h3>
+                    <h1>Let's donate to needy people for better lives</h1>
+                    <p>A little help with a little smile gives a meaning to human life. "Help those less fortune thank you ,for it real human existence"</p>
+                    <div class="donate">
+                        <a href="/">Donate</a>
+                    </div>
+                  </div>
+                </div>
+
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        {% endblock start %} 
+    </div>
+  
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <!-- <script>
+      let typed = new Typed(".auto-type", {
+      strings: ["Your Journey Home Starts Here","Unlocking Dreams, One Home at a Time","Where Every House Becomes a Home","Discover the Key to Your New Home","Unlocking Dreams, One Home at a Time","Where Every House Becomes a Home"],
+      typeSpeed: 30,
+  
+  });
+      </script>   -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- ScrollTrigger -->
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+  type="text/javascript"
+  src="https://unpkg.com/sheryjs/dist/Shery.js"
+></script>
+    <!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+   <!-- jquerry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- tilt js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+ 
+
+    
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+
+</html>
